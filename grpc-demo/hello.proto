@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+// Service definition
+service HelloService {
+
+  // Simple RPC method
+  rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+// Request message
+message HelloRequest {
+  string message = 1;
+}
+
+// Response message
+message HelloResponse {
+  string reply = 1;
+}
